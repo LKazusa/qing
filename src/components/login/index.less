@@ -1,0 +1,46 @@
+.login-form {
+    max-width: 300px;
+  }
+.login-form-forgot {
+    float: right;
+  }
+.login-form-button {
+    width: 100%;
+  }
+body,html{
+  height: 100%;
+  width: 100%;
+}
+#root{
+  height: 100%;
+  width: 100%;
+}
+.login-wrapper{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    .login-background{
+      height:1000px;
+      width: 5000px;
+      background-image: linear-gradient(45deg,#6fc7b5 0%,#13bdce, 20%,#0094d9 40%, #5a3694 60%, #ee4d74 80%, #f58c58 100%);
+      animation: bgColor 4s ease infinite;
+    }
+    .login-content{
+      position: absolute;
+      width: 100%;
+      top: 38%;
+    }
+}
+
+@keyframes bgColor{
+  0%{
+      transform: translate(0,0);
+  }
+  50%{
+      transform: translate(-60%,-25%);
+  }
+  100%{
+      transform: translate(0,0);
+  }
+}
